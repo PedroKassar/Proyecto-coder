@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <title>CONTACTO</title>
+</head>
+
+<body>
+    <div id="header" class="bgColor">
+        <div><a href="index.html" class="logo"><img src="imagenes/logo.svg" alt="TOPGames"></a></div>
+        <div class="botonera">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="toplanzamientos.html">TOP LANZAMIENTOS</a></li>
+                <li><a href="noticias.html">NOTICIAS</a></li>
+                <li><a href="opiniones.html">OPINIONES</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="sepCon">
+        <form action="" method="POST">
+            <ul class="form1">
+                <li>
+                    <label for="Nombre"></label>
+                    <input type="Nombre" name="Nombre" placeholder="Ingresa tu nombre" required>
+                </li>
+                <li>
+                    <label for="Apellido"></label>
+                    <input type="Apellido" name="Apellido" placeholder="Ingresa tu apellido" required>
+                </li>
+                <li>
+                    <label for="Email"></label>
+                    <input type="Email" name="Email" id="Email" placeholder="Ingresa tu email" required>
+                </li>
+                <li>
+                    <label for="mensaje"></label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingresa tu mensaje"
+                        required></textarea>
+                </li>
+            </ul>
+            <ul class="form2">
+                <div>Genero:</div>
+                <li>
+                    <label for="Hombre">Hombre</label>
+                    <input type="radio" name="genero" id="genero" value="Hombre">
+                </li>
+                <li>
+                    <label for="Mujer">Mujer</label>
+                    <input type="radio" name="genero" id="genero" value="Mujer">
+                </li>
+                <li>
+                    <label for="Otro">Otro</label>
+                    <input type="radio" name="genero" id="genero" value="Otro">
+                </li>
+                <li>
+                    <label for="pais">Pais</label>
+                    <select name="pais" id="pais" required>
+                        <option value="">-</option>
+                        <option value="">Argentina</option>
+                        <option value="">Brasil</option>
+                        <option value="">Chile</option>
+                        <option value="">Colombia</option>
+                        <option value="">Venezuela</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="checkbox">Recibir notificaciones por mail</label>
+                    <input type="checkbox" name="checkbox" id="checkbox" value="Recibir notificaciones por mail">
+            </ul>
+            </li>
+            <ul class="finForm">
+                <li>
+                    <input type="submit" value="Enviar" name="sube_form">
+                    <input type="reset" value="Borrar todo" name="resetear">
+                </li>
+            </ul>
+        </form>
+    </div>
+    <div id="footerBackground" class="bgColor">
+        <ul>
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="toplanzamientos.html">TOP LANZAMIENTOS</a></li>
+            <li><a href="noticias.html">NOTICIAS</a></li>
+            <li><a href="opiniones.html">OPINIONES</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

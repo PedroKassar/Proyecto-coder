@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+$coloraro: radial-gradient(circle, rgba(235, 234, 234, 1) 0%, rgba(212, 212, 212, 1) 30%, rgba(170, 170, 170, 1) 78%, rgba(126, 126, 126, 1) 100%);
+$tipic: 100px;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    background: white;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+ol {
+    list-style-position: inside;
+}
+
+#start a img {
+    width: 100%;
+    max-height: 100vh;
+}
+
+.bgColor {
+    background: white;
+}
+
+#header {
+    min-height: $tipic;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 5px solid black;
+}
+
+#header .logo img {
+    width: $tipic;
+    transition: all 500ms ease-in-out;
+    padding: 10px 0;
+}
+
+#header img {
+    vertical-align: middle;
+}
+
+#header li {
+    display: inline-block;
+    padding: 10px 35px;
+    transition: all 500ms ease-in-out;
+}
+
+#header li:hover {
+    transform: scale(1.5);
+}
+
+#header li a:hover {
+    transform: scale(1.5);
+    text-decoration: none;
+    color: black;
+}
+
+#header ul {
+    margin-bottom: 0;
+}
+
+#header .logo img:hover {
+    transform: scale(1.5);
+}
+
+.padreFire {
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.onFire {
+    height: 780px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+
+    background-image: url(/imagenes/resident.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1em;
+    border: groove grey;
+}
+
+.descrip {
+    width: 80%;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding: 10px;
+    font-style: italic;
+}
+
+#lanzamientos .contenido {
+    width: 40%;
+    margin: auto;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+#lanzamientos .contenido img {
+    width: 100%;
+    border-radius: 1em;
+    border: groove grey;
+
+}
+
+#lanzamientos h2 {
+    text-align: center;
+}
+
+#footerBackground {
+    border-top: 5px solid black;
+}
+
+#footerBackground ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#footerBackground ul li {
+    padding: 20px 35px;
+    transition: all 500ms ease-in-out;
+}
+
+#footerBackground li:hover {
+    transform: scale(1.5);
+}
+
+#footerBackground li a:hover {
+    transform: scale(1.5);
+    text-decoration: none;
+    color: black;
+}
+
+#noticias {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#noticias p {
+    padding: 10px 0;
+
+}
+
+
+#notiBorder {
+    border: groove grey;
+    border-radius: 1em;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
+
+.notiImg {
+    background-image: url(imagenes/ps5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 180px;
+    width: 300px;
+    border-radius: 1em;
+}
+
+#noticias h2 {
+    margin-left: 10px;
+}
+
+#imgMayor {
+    display: flex;
+    flex-direction: row;
+}
+
+#imgTop {
+    padding: 10px;
+}
+
+#imgTop img {
+    max-height: 200px;
+    padding: 10px;
+    border-radius: 1em;
+}
+
+#imgTop ol {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
+#imgTop li {
+    display: flex;
+    flex-direction: row;
+    justify-items: space-between;
+    margin: 15px;
+    font-style: italic;
+    border: groove grey;
+    border-radius: 1em;
+}
+
+#imgMayor div {
+    padding-top: 10px;
+}
+
+#imgTop2 {
+    padding: 10px;
+}
+
+#imgTop2 img {
+    max-height: 200px;
+    padding: 10px;
+    border-radius: 1em;
+}
+
+#imgTop2 ol {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#imgTop2 li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 15px;
+    font-style: italic;
+    border: groove grey;
+    border-radius: 1em;
+}
+
+.alLado {
+    display: flex;
+    flex-direction: row;
+}
+
+#sepCon {
+    width: 80%;
+    margin: auto;
+}
+
+#sepCon .form1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#sepCon li {
+    list-style-type: none;
+}
+
+.form1 li {
+    padding: 20px 0;
+}
+
+.form1 input {
+    padding: 15px;
+    border-radius: 2em;
+    border: groove grey 0.5em;
+    outline: none;
+}
+
+.form1 textarea {
+    padding: 15px;
+    border-radius: 2em;
+    border: groove grey 0.5em;
+    outline: none;
+}
+
+.form2 li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.form2 div {
+    text-align: center;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.finForm li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.finForm input {
+    padding: 15px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 2em;
+    border: groove grey 0.5em;
+}
+
+#gridCont {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.gente {
+    padding: 10px;
+}
+
+.gente ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.gente li {
+    border: groove grey;
+    border-radius: 1em;
+    padding: 10px;
+    font-size: 20px;
+    color: rgb(97, 0, 253);
+}
+
+.gente p {
+    padding: 5px;
+    font-size: 15px;
+    color: black;
+}
+
+#opiCon li {
+    list-style-type: none;
+}
+
+.usForm1 li {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.usForm1 input {
+    padding: 15px;
+    border-radius: 1em;
+    outline: none;
+    border: groove grey;
+}
+
+.usForm1 textarea {
+    padding: 15px;
+    border-radius: 1em;
+    outline: none;
+    border: groove grey;
+}
+
+.usFormFin li {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.usFormFin input {
+    padding: 15px;
+    margin: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 1em;
+    border: groove grey;
+}
+
+.fondoLetras {
+    background: $coloraro;
+}
+
+/* media */
+
+@media (max-width: 750px) {
+    .descrip {
+        color: rgb(255, 255, 255);
+        background-color: black;
+        border-radius: 1em;
+        opacity: 50%;
+        font-size: 12px;
+        padding: 10px;
+        font-style: italic;
+        width: 60%;
+    }
+
+    .onFire {
+        height: 380px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-end;
+
+        background-image: url(imagenes/resident.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+    }
+
+    #noticias {
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #noticias p {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #gridCont {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .gente ul {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        list-style-type: none;
+    }
+
+    #lanzamientos h2 {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    #lanzamientos .contenido {
+        width: 60%;
+    }
+
+    #header .logo {
+        margin-left: 5px;
+    }
+
+    #header {
+        min-height: 200px;
+        display: flex;
+        flex-direction: column;
+        border-bottom: 5px solid black;
+    }
+
+    #header li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footerBackground ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 1250px) {
+
+    #imgMayor {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width: 630px) {
+
+    #imgMayor div {
+        font-size: 12px;
+    }
+
+    #imgMayor img {
+        min-width: 55%;
+        max-height: 150px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .notiImg {
+        width: 250px;
+    }
+
+}
