@@ -70,7 +70,7 @@ ol {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-end;
-  background-image: url(/imagenes/resident.png);
+  background-image: url(imagenes/resident.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
