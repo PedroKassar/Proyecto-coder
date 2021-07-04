@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-$coloraro: radial-gradient(circle, rgba(235, 234, 234, 1) 0%, rgba(212, 212, 212, 1) 30%, rgba(170, 170, 170, 1) 78%, rgba(126, 126, 126, 1) 100%);
+$coloraro: white;
 $tipic: 100px;
 
 * {
@@ -11,7 +11,10 @@ $tipic: 100px;
 body {
     font-family: roboto, sans-serif;
     font-weight: 400;
-    background: white;
+    // background: white;
+    background-image: url(/imagenes/nubes.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 a {
@@ -118,11 +121,11 @@ ol {
     width: 100%;
     border-radius: 1em;
     border: groove grey;
-
 }
 
 #lanzamientos h2 {
     text-align: center;
+    color: white;
 }
 
 #footerBackground {
@@ -184,65 +187,22 @@ ol {
     margin-left: 10px;
 }
 
-#imgMayor {
-    display: flex;
-    flex-direction: row;
-}
-
-#imgTop {
-    padding: 10px;
-}
-
-#imgTop img {
-    max-height: 200px;
-    padding: 10px;
-    border-radius: 1em;
-}
-
-#imgTop ol {
+#imgMayor div{
     display: flex;
     flex-direction: column;
-    justify-items: center;
-}
-
-#imgTop li {
-    display: flex;
-    flex-direction: row;
-    justify-items: space-between;
-    margin: 15px;
-    font-style: italic;
-    border: groove grey;
-    border-radius: 1em;
-}
-
-#imgMayor div {
+    align-items: center;
     padding-top: 10px;
-}
-
-#imgTop2 {
-    padding: 10px;
-}
-
-#imgTop2 img {
-    max-height: 200px;
-    padding: 10px;
-    border-radius: 1em;
-}
-
-#imgTop2 ol {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#imgTop2 li {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 15px;
-    font-style: italic;
-    border: groove grey;
-    border-radius: 1em;
+    width: 1000px;
+    margin: auto;
+    background-color: white;
+    h2{
+        padding-bottom: 10px;
+    }
+    p{
+        text-align: center;
+        width: 800px;
+        padding: 20px;
+    }
 }
 
 .alLado {
@@ -465,28 +425,6 @@ ol {
         display: flex;
         flex-direction: column;
         align-items: center;
-    }
-
-}
-
-@media (max-width: 1250px) {
-
-    #imgMayor {
-        display: flex;
-        flex-direction: column;
-    }
-
-}
-
-@media (max-width: 630px) {
-
-    #imgMayor div {
-        font-size: 12px;
-    }
-
-    #imgMayor img {
-        min-width: 55%;
-        max-height: 150px;
     }
 
 }

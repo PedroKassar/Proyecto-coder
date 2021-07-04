@@ -6,7 +6,9 @@
 body {
   font-family: roboto, sans-serif;
   font-weight: 400;
-  background: white; }
+  background-image: url(/imagenes/nubes.gif);
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 a {
   color: black;
@@ -96,7 +98,8 @@ ol {
   border: groove grey; }
 
 #lanzamientos h2 {
-  text-align: center; }
+  text-align: center;
+  color: white; }
 
 #footerBackground {
   border-top: 5px solid black; }
@@ -145,56 +148,20 @@ ol {
 #noticias h2 {
   margin-left: 10px; }
 
-#imgMayor {
-  display: flex;
-  flex-direction: row; }
-
-#imgTop {
-  padding: 10px; }
-
-#imgTop img {
-  max-height: 200px;
-  padding: 10px;
-  border-radius: 1em; }
-
-#imgTop ol {
-  display: flex;
-  flex-direction: column;
-  justify-items: center; }
-
-#imgTop li {
-  display: flex;
-  flex-direction: row;
-  justify-items: space-between;
-  margin: 15px;
-  font-style: italic;
-  border: groove grey;
-  border-radius: 1em; }
-
 #imgMayor div {
-  padding-top: 10px; }
-
-#imgTop2 {
-  padding: 10px; }
-
-#imgTop2 img {
-  max-height: 200px;
-  padding: 10px;
-  border-radius: 1em; }
-
-#imgTop2 ol {
   display: flex;
   flex-direction: column;
-  justify-content: center; }
-
-#imgTop2 li {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 15px;
-  font-style: italic;
-  border: groove grey;
-  border-radius: 1em; }
+  align-items: center;
+  padding-top: 10px;
+  width: 1000px;
+  margin: auto;
+  background-color: white; }
+  #imgMayor div h2 {
+    padding-bottom: 10px; }
+  #imgMayor div p {
+    text-align: center;
+    width: 800px;
+    padding: 20px; }
 
 .alLado {
   display: flex;
@@ -311,7 +278,7 @@ ol {
   border: groove grey; }
 
 .fondoLetras {
-  background: radial-gradient(circle, #ebeaea 0%, #d4d4d4 30%, #aaaaaa 78%, #7e7e7e 100%); }
+  background: white; }
 
 /* media */
 @media (max-width: 750px) {
@@ -369,18 +336,6 @@ ol {
     display: flex;
     flex-direction: column;
     align-items: center; } }
-
-@media (max-width: 1250px) {
-  #imgMayor {
-    display: flex;
-    flex-direction: column; } }
-
-@media (max-width: 630px) {
-  #imgMayor div {
-    font-size: 12px; }
-  #imgMayor img {
-    min-width: 55%;
-    max-height: 150px; } }
 
 @media (max-width: 400px) {
   .notiImg {
