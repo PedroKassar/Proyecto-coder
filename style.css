@@ -5,7 +5,7 @@ html {
 body {
   position: relative;
   margin: auto;
-  background-image: url(/imagenes/nubes.gif);
+  background-image: url(imagenes/nubes.gif);
   perspective: 500px; }
 
 main {
