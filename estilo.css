@@ -80,7 +80,7 @@ ol {
   background-size: cover;
   background-position: center;
   border-radius: 1em;
-  border: groove grey; }
+  border: solid white; }
 
 .descrip {
   width: 80%;
@@ -98,7 +98,7 @@ ol {
 #lanzamientos .contenido img {
   width: 100%;
   border-radius: 1em;
-  border: groove grey; }
+  border: solid white; }
 
 #lanzamientos h2 {
   text-align: center;
@@ -128,29 +128,39 @@ ol {
 #noticias {
   padding: 10px;
   display: flex;
-  flex-direction: row; }
-
-#noticias p {
-  padding: 10px 0; }
+  flex-direction: column;
+  justify-content: space-evenly;
+  max-width: 1000px;
+  margin: auto; }
 
 #notiBorder {
-  border: groove grey;
-  border-radius: 1em;
+  margin-bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: white;
-  padding: 10px;
-  margin: 10px; }
+  border-bottom: 3px solid black;
+  border-top: 3px solid black; }
+  #notiBorder p {
+    color: black;
+    text-align: center;
+    max-width: 1000px;
+    padding: 10px 0; }
 
-.notiImg {
-  background-image: url(imagenes/ps5.jpg);
+.notiImg img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 180px;
-  width: 300px;
-  border-radius: 1em; }
+  width: 100%;
+  height: 600px;
+  border-bottom: 3px solid black; }
 
 #noticias h2 {
-  margin-left: 10px; }
+  color: black;
+  padding: 10px 0;
+  font-size: 24px;
+  text-align: center;
+  background-color: white; }
 
 #imgMayor div {
   display: flex;
