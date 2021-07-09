@@ -188,7 +188,7 @@ ol {
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 600px;
+    max-height: 600px;
     border-bottom: 3px solid black;
 }
 
@@ -388,17 +388,6 @@ ol {
         background-position: right;
     }
 
-    #noticias {
-        padding: 15px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    #noticias p {
-        padding: 10px;
-        font-size: 14px;
-    }
-
     #gridCont {
         display: grid;
         grid-template-columns: 1fr;
@@ -454,10 +443,6 @@ ol {
 }
 
 @media (max-width: 400px) {
-
-    .notiImg {
-        width: 250px;
-    }
 
     #imgMayor{
         iframe{
