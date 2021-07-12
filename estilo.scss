@@ -225,37 +225,44 @@ ol {
     flex-direction: row;
 }
 
-#sepCon {
-    width: 80%;
-    margin: auto;
+#sepCon{
+    max-width: 600px;
+    background-color: white;
+    margin:  30px auto;
+    box-shadow:0 0 40px -5px #000;
+    border-radius: 1em;
 }
 
 #sepCon .form1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-#sepCon li {
-    list-style-type: none;
+    li{
+        list-style-type: none;
+    }
 }
 
 .form1 li {
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .form1 input {
     padding: 15px;
-    border-radius: 2em;
-    border: groove grey 0.5em;
+    border: 3px solid black;
     outline: none;
+    width: 500px;
+    border-radius: 1em;
+    margin-top: 10px;
 }
 
 .form1 textarea {
     padding: 15px;
-    border-radius: 2em;
-    border: groove grey 0.5em;
+    border: 3px solid black;
     outline: none;
+    width: 500px;
+    resize: none;
+    border-radius: 1em;
+    margin-top: 10px;
 }
 
 .form2 li {
@@ -263,14 +270,13 @@ ol {
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    color: white;
+    color: black;
 }
 
-.form2 div {
+.form2 h2 {
     text-align: center;
-    font-size: 18px;
-    text-decoration: underline;
-    color: white;
+    font-size: 20px;
+    color: black;
 }
 
 .finForm li {
@@ -282,10 +288,14 @@ ol {
 .finForm input {
     padding: 15px;
     margin: 10px;
-    background-color: black;
-    color: white;
-    border-radius: 2em;
-    border: groove grey 0.5em;
+    background-color: white;
+    color: black;
+    border-radius: 1em;
+    border: 2px solid black;
+}
+
+.finForm input:hover{
+    transform: scale(1.2);
 }
 
 #gridCont {
@@ -441,6 +451,18 @@ ol {
         }
     }
 
+    #sepCon{
+        width: 400px;
+    }
+
+    .form1 input{
+        width: 300px;
+    }
+
+    .form1 textarea{
+        width: 300px;
+    }
+
 }
 
 @media (max-width: 400px) {
@@ -450,6 +472,18 @@ ol {
         max-width: 400px;
         max-height: 200px;
         }
+    }
+
+    #sepCon{
+        width: 300px;
+    }
+
+    .form1 input{
+        width: 200px;
+    }
+
+    .form1 textarea{
+        width: 200px;
     }
 
 }
