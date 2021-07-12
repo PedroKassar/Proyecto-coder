@@ -85,9 +85,8 @@ ol {
     transform: scale(1.5);
 }
 
-.padreFire {
-    width: 80%;
-    margin: auto;
+#padreFire {
+    width: 100%;
     margin-top: 20px;
 }
 
@@ -101,12 +100,11 @@ ol {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    border-radius: 1em;
-    border: solid white;
+    border: 2px solid white;
 }
 
 .descrip {
-    width: 80%;
+    width: 70%;
     color: rgb(255, 255, 255);
     font-size: 18px;
     padding: 10px;
@@ -122,8 +120,8 @@ ol {
 
 #lanzamientos .contenido img {
     width: 100%;
-    border-radius: 1em;
-    border: solid white;
+    border-radius: 8px;
+    border: 2px solid white;
 }
 
 #lanzamientos h2 {
@@ -392,8 +390,8 @@ ol {
     }
 
     #gridCont {
-        display: grid;
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
     }
 
     .gente ul {
@@ -405,11 +403,11 @@ ol {
 
     #lanzamientos h2 {
         text-align: center;
-        font-size: 14px;
+        font-size: 24px;
     }
 
     #lanzamientos .contenido {
-        width: 60%;
+        width: 95%;
     }
 
     #header .logo {
