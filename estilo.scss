@@ -291,8 +291,9 @@ ol {
 }
 
 #gridCont {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .gente {
@@ -300,15 +301,15 @@ ol {
 }
 
 .gente ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 20px;
     list-style-type: none;
+    max-width: 1000px;
 }
 
 .gente li {
-    border: groove grey;
-    border-radius: 1em;
+    border: 2px solid black;
     padding: 10px;
     font-size: 20px;
     color: rgb(97, 0, 253);
@@ -322,6 +323,7 @@ ol {
 
 #opiCon li {
     list-style-type: none;
+    padding: 10px;
 }
 
 .usForm1 li {
@@ -335,14 +337,14 @@ ol {
     padding: 15px;
     border-radius: 1em;
     outline: none;
-    border: groove grey;
+    
 }
 
 .usForm1 textarea {
     padding: 15px;
     border-radius: 1em;
     outline: none;
-    border: groove grey;
+    resize: none;
 }
 
 .usFormFin li {
@@ -357,7 +359,6 @@ ol {
     background-color: black;
     color: white;
     border-radius: 1em;
-    border: groove grey;
 }
 
 .fondoLetras {

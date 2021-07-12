@@ -238,21 +238,22 @@ ol {
   border: groove grey 0.5em; }
 
 #gridCont {
-  display: grid;
-  grid-template-columns: 1fr 1fr; }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
 
 .gente {
   padding: 10px; }
 
 .gente ul {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 20px;
-  list-style-type: none; }
+  list-style-type: none;
+  max-width: 1000px; }
 
 .gente li {
-  border: groove grey;
-  border-radius: 1em;
+  border: 2px solid black;
   padding: 10px;
   font-size: 20px;
   color: #6100fd; }
@@ -263,7 +264,8 @@ ol {
   color: black; }
 
 #opiCon li {
-  list-style-type: none; }
+  list-style-type: none;
+  padding: 10px; }
 
 .usForm1 li {
   padding: 10px 0;
@@ -274,14 +276,13 @@ ol {
 .usForm1 input {
   padding: 15px;
   border-radius: 1em;
-  outline: none;
-  border: groove grey; }
+  outline: none; }
 
 .usForm1 textarea {
   padding: 15px;
   border-radius: 1em;
   outline: none;
-  border: groove grey; }
+  resize: none; }
 
 .usFormFin li {
   display: flex;
@@ -293,8 +294,7 @@ ol {
   margin: 10px;
   background-color: black;
   color: white;
-  border-radius: 1em;
-  border: groove grey; }
+  border-radius: 1em; }
 
 .fondoLetras {
   background: white; }
