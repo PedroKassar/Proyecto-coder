@@ -86,17 +86,18 @@ ol {
 }
 
 #padreFire {
-    width: 100%;
-    margin-top: 20px;
+    width: 70%;
+    margin: 20px auto;
 }
 
 .onFire {
-    height: 780px;
+    height: 580px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-end;
+    border-radius: 8px;
 
-    background-image: url(imagenes/resident.png);
+    background-image: url(imagenes/resident.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -375,6 +376,14 @@ ol {
 
 /* media */
 
+@media (max-width: 900px) {
+
+    #lanzamientos .contenido {
+        width: 65%;
+    }
+
+}
+
 @media (max-width: 750px) {
     .descrip {
         color: rgb(255, 255, 255);
@@ -384,7 +393,12 @@ ol {
         font-size: 12px;
         padding: 10px;
         font-style: italic;
-        width: 60%;
+        min-width: 60%;
+        max-height: 360px;
+    }
+
+    #padreFire{
+        width: 100%;
     }
 
     .onFire {
@@ -393,7 +407,7 @@ ol {
         flex-wrap: wrap;
         align-items: flex-end;
 
-        background-image: url(imagenes/resident.png);
+        background-image: url(imagenes/resident-celu.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: right;
