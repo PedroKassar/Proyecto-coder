@@ -86,14 +86,12 @@ ol {
 }
 
 #padreFire {
-    width: 70%;
-    margin: 20px auto;
+    width: 100%;
 }
 
 .onFire {
-    height: 580px;
+    height: 880px;
     display: flex;
-    flex-wrap: wrap;
     align-items: flex-end;
     border-radius: 8px;
 
@@ -112,6 +110,13 @@ ol {
     font-style: italic;
 }
 
+#lanzamientos {
+    background-color: rgb(26, 25, 25);
+    margin: 80px 0;
+    border: 2px solid white;
+    border-radius: 8px;
+}
+
 #lanzamientos .contenido {
     width: 40%;
     margin: auto;
@@ -128,10 +133,59 @@ ol {
 #lanzamientos h2 {
     text-align: center;
     color: white;
+    font-size: 30px;
+}
+
+#secciones {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(26, 25, 25);
+    border: 2px solid white;
+    border-radius: 8px;
+    margin-bottom: 80px;
+    padding: 30px;
+    max-width: 100%;
+    h2{
+        color: white;
+        font-size: 24px;
+        padding: 5px 0;
+        text-align: center;
+    }
+}
+
+.notHome img {
+    max-width: 200px;
+    padding: 30px;
+    transition: all 400ms ease-in-out;
+}
+
+.opiHome img {
+    max-width: 200px;
+    padding: 30px;
+    transition: all 400ms ease-in-out;
+}
+
+.conHome img {
+    max-width: 200px;
+    padding: 30px;
+    transition: all 400ms ease-in-out;
+}
+
+.notHome :hover {
+    transform: scale(1.5);
+}
+
+.opiHome :hover {
+    transform: scale(1.5);
+}
+
+.conHome :hover {
+    transform: scale(1.5);
 }
 
 #footerBackground {
     border-top: 5px solid black;
+    border-bottom: 5px solid black;
 }
 
 #footerBackground ul {
@@ -293,6 +347,7 @@ ol {
     color: black;
     border-radius: 1em;
     border: 2px solid black;
+    transition: all 400ms ease-in-out;
 }
 
 .finForm input:hover{
@@ -365,13 +420,26 @@ ol {
 .usFormFin input {
     padding: 15px;
     margin: 10px;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     border-radius: 1em;
+    border: 2px solid black;
+    transition: all 400ms ease-in-out;
+}
+
+.usFormFin input:hover {
+transform: scale(1.2);
 }
 
 .fondoLetras {
     background: $coloraro;
+}
+
+.copy {
+    background-color: rgb(26, 25, 25);
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
 /* media */
@@ -475,6 +543,12 @@ ol {
 
     .form1 textarea{
         width: 300px;
+    }
+
+    #secciones {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 }
